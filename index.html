@@ -1,77 +1,83 @@
-<!-- This is a webpage (not site) and is a prototype -->
+<!-- The actual website (home page) -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kori Games Inc.</title>
-    <link rel="stylesheet" href="style/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kori Games Inc.</title>
+   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
+   <!-- Logo, hyperlinks (I think...) -->
+   <header>
+      <img id="logo" src="images/logo.png" alt="Logo">
 
-    <!-- Social Media -->
-    <header>
-        <nav class="social-nav">
-            <a href="#tiktok">TikTok</a>
-            <a href="#instagram">Instagram</a>
-            <a href="#discord">Discord</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#youtube">YouTube</a>
-        </nav>
-    </header>
+      <a class="link" href="index.html">HOME</a>
+      <a class="link" href="games.html">GAMES</a>
+      <a class="link" href="devlog.html">DEVLOG</a>
+      <a class="link" href="about.html">ABOUT</a>
+   </header>
 
-    <main>
-        <!-- Headline -->
-        <section class="hero">
-            <h1>Welcome to Kori Games</h1>
-            <p>Build, explore, and survive in our new immersive universe.</p>
-            <button class="cta-btn">Play Now</button>
-        </section>
+   <!-- Header (H1) -->
+   <div id="header">
+      <h1>Kori Games Inc.</h1>
+   </div>
 
-        <!-- Screenshots -->
-        <article class="shot"><img src="images/shot1.jpg" alt="Gameplay preview 1"></article>
-        <article class="shot"><img src="images/shot2.jpg" alt="Gameplay preview 2"></article>
-        <article class="shot"><img src="images/shot3.jpg" alt="Gameplay preview 3"></article>
-        <article class="shot"><img src="images/shot4.jpg" alt="Gameplay preview 4"></article>
+   <!-- Main contains 2 div elements -->
+   <main class="container">
+      <!-- On its own -->
+      <div id="left-bar">
+         <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi atque illo ipsa autem accusamus quae nihil esse cum dignissimos, voluptas cupiditate culpa quisquam neque sint. Vitae saepe excepturi fugiat sequi? 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus suscipit iure ipsum, voluptatibus magnam modi pariatur omnis assumenda. Doloremque at voluptas nulla, nihil illo optio voluptatum nemo aliquid dolore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tenetur inventore nostrum repudiandae quia fugiat deserunt. Ipsum dolores expedita adipisci sapiente consectetur autem accusantium. Commodi quaerat labore hic enim assumenda.
+         </p>
+      </div>
+      
+      <!-- Contains 3 article elements -->
+      <div id="right-bar">
+         <article class="post" id="upper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla esse eum fuga deleniti rerum illo animi dolor, repellendus ipsa officiis delectus dolorum sapiente, facere optio amet excepturi quod vel.</p>
+         </article>
 
-        <!-- 1/2 I'll reserve this for features grid -->
-        <section class="features-grid">
-            <div class="feature-item"><h3>Open World</h3><p>Vast lands to discover.</p></div>
-            <div class="feature-item"><h3>Co-op</h3><p>Play with friends online.</p></div>
-        </section>
+         <article class="post" id="middle">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit cupiditate facilis libero odio nisi doloribus. Neque laboriosam quaerat saepe. Neque dolorem quasi, a illum nulla nam error quaerat consequuntur.</p>
+         </article>
 
-        <!-- 2/2 shout out game's selling points in small chunks -->
-        <section class="selling-points">
-            <span class="badge">Fast Action</span>
-            <span class="badge">No Pay-to-Win</span>
-            <span class="badge">Regular Updates</span>
-        </section>
+         <article class="post" id="lower">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi sequi veritatis cumque provident quibusdam, laborum dolorum? Rerum aliquam culpa, aliquid, at dolorum unde nemo quibusdam doloribus neque architecto fugit.</p>
+         </article>         
+      </div>
+   </main>
 
-        <!-- Real testimonials from real users -->
-        <aside id="testimonial">
-            <p>"The best game I played this year!"</p>
-            <cite>- GamerPro99</cite>
-        </aside>
-        <aside id="testimonial">
-            <p>"Incredible graphics and smooth gameplay."</p>
-            <cite>- PixelCritic</cite>
-        </aside>
+   <!-- Copyright, year, social links -->
+   <footer>
+      <a href="https:/www.tiktok.com" class="socials">
+         <img id="logo" src="images/tiktok.png" alt="TikTok">
+      </a>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+      <a href="https:/www.instagram.com" class="socials">
+         <img id="logo" src="images/instagram.png" alt="Instagram">
+      </a>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; <span id="year"></span> Kori Games Inc. | All rights reserved.</p>
-    </footer>
-    <script defer src="scripts/script.js"></script>
+      <a href="https:/www.x.com" class="socials">
+         <img id="logo" src="images/twitter.png" alt="(X) Twitter">
+      </a>
+
+      <a href="https:/www.discord.com" class="socials">
+         <img id="logo" src="images/discord.png" alt="Discord">
+      </a>
+
+      <a href="https:/www.youtube.com/@KoriGamesInc" class="socials">
+         <img id="logo" src="images/youtube.png" alt="YouTube">
+      </a>
+
+      <p>&copy; <span id="year"></span> | Kori Games Inc. | All rights reserved.</p>
+   </footer>
+
+   <script defer src="scripts/script.js"></script>
 </body>
+
 </html>
