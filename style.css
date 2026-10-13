@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+div, header, aside, main, div, article, footer {   
+    border: 1.5px solid #000;
+    border-radius: 25px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    text-align: center; /* to be sorted */
+}
+
+#logo, .logo {
+    width: 2%;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+}
+
+/* to be continued */
+.container{
+    display: grid;
+    grid-template-columns: 250px;
+    gap: 20px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* to be continued */
+
+.post {
+    margin: 0.5%;
+    padding: 0.5%;
+    border: 1.5px solid #000;
+    border-radius: 25px;
+    /* to be deleted */
+    color: #000;
+    background-color: #fff;
+}
+
+.sidebar {
+    /* width: 34.25%; */
+    /* height: 100%;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: auto; */
+    margin: 0.5% 0.25% 0.5% 0.5%;
+    padding: 0.5%;
+    /* to be deleted */
+    color: #fff;
+    background-color: #000;
+}
+
+.main-content {
+    /* width: 63.25%; */
+    /* height: 100%; */
+    margin-left: auto;
+    margin: 0.5% 0.5% 0.5% 0.25%;
+    padding: 0.5%;
+    /* flex: 1; */
+    color: #fff;
+    background-color: #000;
+}
